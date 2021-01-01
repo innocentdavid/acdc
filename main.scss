@@ -140,6 +140,10 @@ background-size: contain;
 background-repeat: no-repeat;
 }
 
+#about p {
+    padding: 0 !important;
+}
+
 .recent-events {
     position: relative;
     width: 100vw;
