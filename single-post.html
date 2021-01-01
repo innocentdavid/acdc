@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>ACDC</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- owl-carousel -->
+  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="main.css">
+
+  <style>
+    .header-text {
+      display: none !important;
+    }
+
+    .single-canvase {
+      width: 100%;
+      height: 400px;
+      padding: 0 10%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+   
+    .img-toggle {
+      font-size: 50px;
+      margin: 20px;
+      cursor: pointer;
+    }
+    
+    .single-canvase .main-display {
+      width: 100%;
+      height: 100%;
+      background: gray;
+    }
+
+    .single-tiles {
+      width: 100%;
+      height: 100px;
+      margin-top: 10px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 0 10px;
+      overflow: auto;
+    }
+
+
+
+    .single-tiles img{
+      height: 100%;
+      width: 150px;
+      margin-right: 5px;
+    }
+
+    .single-tiles .active{
+      border: 2px solid rgb(40, 18, 108);
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header style="height: 10vh;">
+    <div class="header">
+      <div class="nav">
+        <a href="index.html" class="logo">
+          <img src="images/ACDC LOGO 100 by 100.png" alt="" width="50px" height="50px">
+        </a>
+        <div class="menu_btn"></div>
+        <div class="navbar">
+          <span><a href="index.html" class="active">Home</a></span>
+          <span><a href="#events">Events</a></span>
+          <span><a href="#gallery">Gallery</a></span>
+          <span><a href="#about">About us</a></span>
+          <span><a href="#">Contact us</a></span>
+          <span onclick="donate()" class="navDonateBtn">Donate</span>
+        </div>
+      </div>
+
+      <div class="header-text">
+        <h1><b>AIYEPE AREA COMMMUNITY DEVELOPMENTs COMMITTEE</b></h1>
+      </div>
+    </div>
+  </header>
+
+  <div class="d-none d-md-block" style="height: 50px"></div>
+
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-8">
+          <div class="single-canvase">
+            <!-- <div class="img-toggle"><img src="images/prev.svg" alt=""></div> -->
+            <div class="main-display-div"><img class="main-display" src="images/4.png" alt=""></div>
+            <!-- <div class="img-toggle"><img src="images/next.svg" alt=""></div> -->
+          </div>
+          <div class="single-tiles">
+            <img class="active" src="images/4.png" />
+            <img src="images/5.png" />
+            <img src="images/6.png" />
+            <img src="images/4.png" />
+            <img src="images/5.png" />
+            <img src="images/6.png" />
+            <img src="images/4.png" />
+            <img src="images/5.png" />
+            <img src="images/6.png" />
+          </div>
+        </div>
+        <div class="col-12 col-md-4" style="margin-top: 80px;">
+          <p style="font-family: 'Times New Roman', serif; font-size: 22px; margin-left: -30px; padding-right: 10px;">
+            Post Description, if any! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti vero aliquam, harum laudantium nobis
+            temporibus. Nesciunt, maxime! Quas, minus fugit suscipit quae at recusandae nostrum ducimus, ipsum modi
+            blanditiis vitae.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+
+  <div class="donate modal">
+    <div class="container-fluid">
+      <div class="close" style="margin-top: -30px; cursor: pointer;">X</div>
+
+      <div class="logo text-center">
+        <img src="images/ACDC LOGO 100 by 100.png" alt="" width="50px" height="50px" style="margin-bottom: 20px">
+      </div>
+
+      <div class="row">
+        <form class="col-12" action="" method="POST">
+          <div class="form-group">
+            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your full name">
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" name="description" id="description" rows="3">Any description?</textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <script src="owlcarousel/jquery.min.js"></script>
+  <script src="owlcarousel/owl.carousel.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+  <script src="main.js"></script>
+
+    <script>
+      var tab = 1;
+      
+      $('.single-tiles img').on('click', (event) => {
+        var active = $('.single-tiles .active')[0];
+        
+        var t = $(event.target)[0];
+        var src = t.getAttribute('src');
+        
+        var x = $('.main-display-div')[0];
+        x.innerHTML = `
+          <img src="${src}" width='100%' height="100%" />
+        `;
+      })
+    </script>
+
+</body>
+
+</html>
